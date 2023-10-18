@@ -1,0 +1,130 @@
+:root{
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --paragraphs: hsla(0, 0%, 100%, 0.75);
+    --bg-headings-btn: hsl(0, 0%, 95%); 
+}
+
+body{
+    height: 100vh;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;   
+}
+
+.cards{
+    padding: 30px;
+}
+
+.cards-container{
+    padding: 30px 40px;   
+}
+
+.cards-container h2{
+    margin: 20px 0;
+    color: var(--bg-headings-btn);
+}
+
+.cards-container p{
+    color: var(--paragraphs);
+    font-size: 15px;
+    letter-spacing: 0.01em;
+}
+
+.cards-container button{
+    padding: 15px 60px;
+    border-radius: 15px;
+    border: none;
+    margin: 20px 0;
+    font-weight: 900;
+}
+
+.cards-container button:first-child{
+    color: var(--bright-orange);   
+}
+
+.cards-container:nth-child(2) button{
+    color: var(--dark-cyan);
+}
+
+.cards-container:last-child button{
+    color: var(--very-dark-cyan);
+}
+
+.cards-container:first-child{
+    background-color: var(--bright-orange);
+}
+
+.cards-container:nth-child(2){
+    background-color: var(--dark-cyan);
+}
+
+.cards-container:last-child{
+    background-color: var(--very-dark-cyan);
+}
+
+.cards-container:first-child{
+    border-radius: 15px 15px 0 0;
+}
+
+.cards-container:last-child{
+    border-radius: 0 0 15px 15px ;
+}
+
+.attribution{
+    text-align: center;
+}
+
+@media screen and (min-width: 430px) {
+    .cards{
+        width: 95%;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 560px) {
+    .cards{
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 670px) {
+    .cards{
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .cards{
+        padding: 150px 0;
+        display: flex;
+        display: flex;
+        justify-content: center;  
+    }
+    
+    .cards-container:first-child{
+        border-radius: 15px 0 0 15px;
+    } 
+    .cards-container:last-child{
+        border-radius: 0 15px 15px 0;
+    } 
+}
+
+@media screen and (min-width: 1440px) {
+    
+    .cards{
+        padding: 150px 0;
+        display: flex;
+        justify-content: center;
+        width: 25%;
+        margin: auto;
+    }
+     
+}
+
+
+
